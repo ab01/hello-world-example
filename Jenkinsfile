@@ -28,7 +28,7 @@ server.upload(uploadSpec)
 }
 stash includes: 'target/helloworld-example-0.1.0.jar,src/pt/Hello_World_Test_Plan.jmx', name: 'binary'
 } catch (e) {
-    // If there was an exception thrown, the build failed
+    // If there was an exception thrown, the build failed test 02
     currentBuild.result = "FAILED"
     throw e
   } finally {
