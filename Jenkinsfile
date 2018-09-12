@@ -92,7 +92,7 @@ def notifyBuild(String buildStatus = 'STARTED') {
     colorCode = '#FF0000'
   }
 
-  // Send notifications
+  // Send notifications.
   slackSend baseUrl: 'https://devops-teamx.slack.com/services/hooks/jenkins-ci/', channel: '#jenkins', color: colorCode, message: summary, token: 'GpQIxzcWjo8qrWDUAW3kktTI'
 
 }
